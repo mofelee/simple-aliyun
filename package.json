@@ -1,0 +1,11 @@
+{
+  "name": "aliyun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MofeLee <mofe@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "node-fetch": "^2.1.2"
+  }
+}
