@@ -19,3 +19,5 @@ run();
 ```sh
 ALIYUN_ID=id ALIYUN_SECRET=secret node test.js
 ```
+
+[reinit-cluster-exampke](https://github.com/mofelee/reinit-cluster-js/blob/master/index.js)
