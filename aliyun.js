@@ -8,6 +8,7 @@ const secret = process.env.ALIYUN_SECRET;
 
 const hmac = crypto.createHmac('sha1', secret + '&');
 
+// aliyun.invoke('DescribeRegions')
 function invoke(action, options = {}){
   const req = Object.assign({
     Format: 'json',
