@@ -1,6 +1,6 @@
 # simple aliyun client
 
-```
+```javascript
 const aliyun = require('simple-aliyun');
 
 async function run(){
