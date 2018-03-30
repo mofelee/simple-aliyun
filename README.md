@@ -1,5 +1,6 @@
 # simple aliyun client
 
+test.js
 ```javascript
 const aliyun = require('simple-aliyun');
 
@@ -13,4 +14,8 @@ async function run(){
 }
 
 run();
+```
+
+```sh
+ALIYUN_ID=id ALIYUN_SECRET=secret node test.js
 ```
