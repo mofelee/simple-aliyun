@@ -6,7 +6,6 @@ const querystring = require('querystring');
 const id = process.env.ALIYUN_ID;
 const secret = process.env.ALIYUN_SECRET;
 
-const hmac = crypto.createHmac('sha1', secret + '&');
 
 // aliyun.invoke('DescribeRegions')
 function invoke(action, options = {}){
@@ -43,6 +42,7 @@ function sign(req){
   str = encodeURIComponent(str).replace(/%3A/g, '%253A');
   str = 'GET&%2F&' + str;
 
+  const hmac = crypto.createHmac('sha1', secret + '&');
   const sign = hmac.update(str).digest().toString('base64');
 
   return sign;
